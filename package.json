@@ -1,0 +1,25 @@
+{
+  "name": "scroll-seam",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:core && npm run build:react",
+    "build:core": "npm run -w @scroll-context/core build",
+    "build:react": "npm run -w @scroll-context/react build",
+    "clean": "npm run clean:core && npm run clean:react",
+    "clean:core": "npm run -w @scroll-context/core clean",
+    "clean:react": "npm run -w @scroll-context/react clean",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.2",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules
+dist
+packages/*/dist
+examples/*/dist
+examples/*/node_modules
+examples/**/*.tsbuildinfo
+.DS_Store
+npm-debug.log*
